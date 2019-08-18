@@ -1,3 +1,14 @@
+#Theme used
 theme: jekyll-theme-dinky
+
+#Title of the site
 title: Robin Parriath
+
+#Short Description of the site
 description: My personal corner on the web
+
+#URL of avatar
+avatar: https://secure.gravatar.com/avatar/b51a35d296f3202b8cc3b00747c5b714?s=200
+
+#Site URL
+url: https://robin.parriath.com
