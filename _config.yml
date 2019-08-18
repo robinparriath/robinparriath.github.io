@@ -1,5 +1,5 @@
 #Theme used
-theme: jekyll-theme-dinky
+theme: jekyll-theme-hacker
 
 #Title of the site
 title: Robin Parriath
@@ -12,3 +12,8 @@ avatar: https://secure.gravatar.com/avatar/b51a35d296f3202b8cc3b00747c5b714?s=20
 
 #Site URL
 url: https://robin.parriath.com
+
+#Footer links
+#footer-links:
+
+

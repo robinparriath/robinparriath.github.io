@@ -1,5 +1,3 @@
-## Welcome to my site!
-
 I'm a programmer and tech enthusiast.
 
 [blog.parriath.com](https://blog.parriath.com) is where I write about general tech stuff.
@@ -26,5 +24,5 @@ I believe we have a huge opportunity in Data Engineering to automate away much o
 .
 
 
-I'm still building this site and will add information to it over time.
+I'm still building this site and will add to it over time.
 You are welcome to [follow the progress on GitHub!](https://github.com/robinparriath/robinparriath.github.io)
