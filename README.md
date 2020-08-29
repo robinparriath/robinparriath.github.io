@@ -1,6 +1,6 @@
 I'm a programmer and tech enthusiast.
 
-[blog.parriath.com](https://blog.parriath.com) is where I write about general tech stuff.
+[blog.parriath.com](https://blog.parriath.com) is where I write about stuff.
 
 .
 
@@ -9,7 +9,7 @@ I'm a programmer and tech enthusiast.
 .
 
 
-I work as a Data Engineer at HP Inc.  Along with Data Warehousing, and ETL, I also develop the tooling for our data engineers.
+I work at HP Inc.  Along with Data Warehousing, and ETL, I also develop the tooling for our data pipelines.
 
 My strategy is to adapt, wherever possible, existing tools, and develop from scratch only when necessary.
 
