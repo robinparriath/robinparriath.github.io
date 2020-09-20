@@ -1,0 +1,53 @@
+body {
+  max-width: 90%;
+  margin: auto;
+}
+
+h2 {
+  border-radius: .5em;
+  overflow: hidden;
+  width: max-content;
+}
+
+h3 {
+  background-color: lightgrey;
+  display: inline-block;
+  padding: .5em;
+  text-transform: capitalize;
+  margin: 1em auto 0 auto;
+  border-radius: 0 .7em;
+}
+
+.divSection {
+  display: block;
+  margin: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 90%;
+}
+
+tr {
+  margin: 2em;
+  overflow: hidden;
+  border: solid white;
+}
+
+td:nth-child(1) {
+  background-color: lightskyblue;
+  padding: .7em 2em;
+  border-radius: 1em 0 0 1em;
+}
+
+td:nth-child(2) {
+  background-color: lightsteelblue;
+  padding: .7em 2em;
+  border-radius: 0 1em 1em 0;
+}
+
+footer {
+  padding: 2em 0;
+  margin: auto;
+  width: max-content;
+}
