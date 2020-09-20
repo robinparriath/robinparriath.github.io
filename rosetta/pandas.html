@@ -8,8 +8,8 @@
     <h2><table><tr><td>SQL</td><td>Pandas</td></tr></table></h2>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">select</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">select</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select * from airports</td>
@@ -35,8 +35,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">select with conditions</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">select with conditions</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select * from airports where iso_region = 'US-CA' and type = 'seaplane_base'</td>
@@ -52,8 +52,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">select with filters In...Not In</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">select with filters In...Not In</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select * from airports where type in ('heliport', 'balloonport')</td>
@@ -69,8 +69,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">select top n records</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">select top n records</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select iso_country from by_country order by size desc limit 10</td>
@@ -86,8 +86,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">select aggregate functions (MIN,MAX,MEAN)</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">select aggregate functions (MIN,MAX,MEAN)</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select max(length_ft), min(length_ft), avg(length_ft), median(length_ft) from runways</td>
@@ -98,8 +98,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">select...order by</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">select...order by</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select * from airport_freq where airport_ident = 'KLAX' order by type</td>
@@ -115,8 +115,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Group By, Count, Order By</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Group By, Count, Order By</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select iso_country, type, sum(price), sum(time) from airports group by iso_country, type order by iso_country, type</td>
@@ -137,8 +137,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Having</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Having</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select type, count(*) from airports where iso_country = 'US' group by type having count(*) > 1000 order by count(*) desc</td>
@@ -149,8 +149,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Join</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Join</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select airport_ident, type, description, frequency_mhz from airport_freq join airports on airport_freq.airport_ref = airports.id where airports.ident = 'KLAX'</td>
@@ -161,8 +161,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Union All and Union</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Union All and Union</h3>
+        <table class="hidden">
             
             <tr>
                 <td>select name, municipality from airports where ident = 'KLAX' union all select name, municipality from airports where ident = 'KLGB'</td>
@@ -173,8 +173,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Insert</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Insert</h3>
+        <table class="hidden">
             
             <tr>
                 <td>create table heroes (id integer, name text);</td>
@@ -200,8 +200,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Update</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Update</h3>
+        <table class="hidden">
             
             <tr>
                 <td>update airports set home_link = 'http://www.lawa.org/welcomelax.aspx' where ident == 'KLAX'</td>
@@ -212,8 +212,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Delete</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Delete</h3>
+        <table class="hidden">
             
             <tr>
                 <td>delete from lax_freq where type = 'MISC'</td>
@@ -229,8 +229,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Update all values in column</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Update all values in column</h3>
+        <table class="hidden">
             
             <tr>
                 <td>update set url = 'http://google.com'</td>
@@ -241,8 +241,8 @@
     </div>
     
     <div class="divSection">
-        <h3 class="collapsibleHeader">Calculated column</h3>
-        <table>
+        <h3 class="collapsibleHeader" onclick="toggleHide(this)">Calculated column</h3>
+        <table class="hidden">
             
             <tr>
                 <td>alter table airport add total_cost AS price * quantity</td>
@@ -254,6 +254,15 @@
     
 
     <footer>Examples from <a href="https://medium.com/jbennetcodes/how-to-rewrite-your-sql-queries-in-pandas-and-more-149d341fc53e">https://medium.com/jbennetcodes/how-to-rewrite-your-sql-queries-in-pandas-and-more-149d341fc53e</a></footer>
+
+    <script type="text/javascript">
+        toggleHide = function(el) {
+            elTable = el.parentNode.getElementsByTagName("table")[0]
+            if (elTable.classList.contains("hidden")) {elTable.classList.remove("hidden")}
+            else elTable.classList.add("hidden")
+        }
+    </script>
+
 
 </body>
 </html>
